@@ -1,0 +1,11 @@
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\bin\Debug\DSM_Cheongjukje_POS.exe.config
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\bin\Debug\DSM_Cheongjukje_POS.exe
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\bin\Debug\DSM_Cheongjukje_POS.pdb
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.csprojAssemblyReference.cache
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.Properties.Resources.resources
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.csproj.GenerateResource.cache
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.csproj.CoreCompileInputs.cache
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.exe
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.pdb
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.Main.resources
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.Form2.resources
