@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DSM_Cheongjukje_POS.exe" version="1.0.0.2" publicKeyToken="251f8f4409482359" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DSM_Cheongjukje_POS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DSM_Cheongjukje_POS.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DSM_Cheongjukje_POS.exe" size="1849304">
+      <assemblyIdentity name="DSM_Cheongjukje_POS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zRGnBuV/tZsjApHfOXAQOQ14nw23Exqti6Qa3SXqwm4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DSM_Cheongjukje_POS.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-HBG3U8A\test" issuerKeyHash="32c7b1941fd9964ec6d6d41b48543000fc257b61" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>cLxvLK6pq/v1GKe0I7R6iGsVuQDzaLq0xUSAFRICTY8=</DigestValue></Reference></SignedInfo><SignatureValue>nsTqPneCPs8BHCbLp1/T2kxRXWnjSKCq3hTOofPxaLGw/GT7VnEJSWLBY6UOtU7VbI68pwXzRJeQ5w7pPJpWo0/LY+Jzg0xvsTdteDDYetGqDIm/Ql8avJT8QLM998Wa8v/HdDMBH9K3JXYxNqm5v1DubVf3RtzMNQoBNS3XUeQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2KH7AYIvI8jtvZU3ed7FYKnbnaD8hFxTuL7gaqgPDsshZKS+kYQn0WmK0VO/mlPbHG4GrZdeZ9tYkZIPEbw9LRpi0lLgmoWjy40/55nKiIoHeHSUsbIi7mzq2XHAqCUtPYqSs9YhRSVIE39yxPj3RMoUuim+C8Gk8lnR/yH3Hi0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8f4d0212158044c5b4ba68f300b9156b887ab423b4a718f5fbaba9ae2c6fbc70" Description="" Url=""><as:assemblyIdentity name="DSM_Cheongjukje_POS.exe" version="1.0.0.2" publicKeyToken="251f8f4409482359" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-HBG3U8A\test</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>I2B3uk6ODzddcR1kcBd5Db4fmfSUpRLjFuupo7UR2qs=</DigestValue></Reference></SignedInfo><SignatureValue>xiXxPeskSc9Do3ta3bVhsAEti2YIvWw+zPB2TOmyb2D0o20lWFnhy0HBpH+jDjQ/H3uFh3U6mi2uwbL2rbY7x2MBoDLRHBCniHchU6YPJIW7gwS1x931Br3cJ7GFRjR288yyYR/5lE/+W9yF8ZUFOK5pCcUiXiq+/QT78ZZ1eXw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2KH7AYIvI8jtvZU3ed7FYKnbnaD8hFxTuL7gaqgPDsshZKS+kYQn0WmK0VO/mlPbHG4GrZdeZ9tYkZIPEbw9LRpi0lLgmoWjy40/55nKiIoHeHSUsbIi7mzq2XHAqCUtPYqSs9YhRSVIE39yxPj3RMoUuim+C8Gk8lnR/yH3Hi0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQdTm7h7WsspRCh+aG+2lVwjANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtAEgAQgBHADMAVQA4AEEAXAB0AGUAcwB0MB4XDTE5MDcxNjE5MzYyMloXDTIwMDcxNjAxMzYyMlowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQBIAEIARwAzAFUAOABBAFwAdABlAHMAdDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA2KH7AYIvI8jtvZU3ed7FYKnbnaD8hFxTuL7gaqgPDsshZKS+kYQn0WmK0VO/mlPbHG4GrZdeZ9tYkZIPEbw9LRpi0lLgmoWjy40/55nKiIoHeHSUsbIi7mzq2XHAqCUtPYqSs9YhRSVIE39yxPj3RMoUuim+C8Gk8lnR/yH3Hi0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQAYyLdMNjDi/JOE5+Ah9O//fempDGWCDEXnBOwG+0uEidpTwV/ezbDVqgKMn1Fw8DJG3DdJE91LLQFdGc8R7/YTXZ4W4TlICBbWBkU4BXmhVlWhVApkNBgaSYbsVAk7STTFdDMb18ZrT3VsO5T5W2OExDHN4WnEY0784JuIqBMPVw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

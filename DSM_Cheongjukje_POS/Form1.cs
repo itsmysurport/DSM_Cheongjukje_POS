@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Text;
 
 namespace DSM_Cheongjukje_POS
 {
@@ -257,6 +258,21 @@ namespace DSM_Cheongjukje_POS
         private void Label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void PictureBox4_Click(object sender, EventArgs e)
+        {
+            priceSendEvent(this.macro42.Text);
+        }
+
+        private void PictureBox5_Click(object sender, EventArgs e)
+        {
+            priceSendEvent(this.macro52.Text);
+        }
+
+        private void PictureBox6_Click(object sender, EventArgs e)
+        {
+            priceSendEvent(this.macro62.Text);
         }
     }
 }

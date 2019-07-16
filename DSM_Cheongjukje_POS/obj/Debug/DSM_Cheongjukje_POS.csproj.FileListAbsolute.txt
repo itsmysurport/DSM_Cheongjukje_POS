@@ -10,3 +10,7 @@ C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM
 C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.Main.resources
 C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.Form2.resources
 C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.Form3.resources
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\bin\Debug\DSM_Cheongjukje_POS.exe.manifest
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\bin\Debug\DSM_Cheongjukje_POS.application
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.exe.manifest
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Debug\DSM_Cheongjukje_POS.application
