@@ -54,6 +54,8 @@
             this.macro6 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -65,7 +67,7 @@
             // 
             // resetBtn
             // 
-            this.resetBtn.Location = new System.Drawing.Point(1081, 765);
+            this.resetBtn.Location = new System.Drawing.Point(1082, 668);
             this.resetBtn.Name = "resetBtn";
             this.resetBtn.Size = new System.Drawing.Size(262, 36);
             this.resetBtn.TabIndex = 3;
@@ -80,7 +82,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(339, 78);
+            this.label1.Size = new System.Drawing.Size(297, 69);
             this.label1.TabIndex = 8;
             this.label1.Text = "Booth Name";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
@@ -127,7 +129,7 @@
             this.macro1.Font = new System.Drawing.Font("SpoqaHanSans-Regular", 15.05454F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.macro1.Location = new System.Drawing.Point(63, 356);
             this.macro1.Name = "macro1";
-            this.macro1.Size = new System.Drawing.Size(0, 35);
+            this.macro1.Size = new System.Drawing.Size(0, 32);
             this.macro1.TabIndex = 14;
             // 
             // macro2
@@ -138,7 +140,7 @@
             this.macro2.Font = new System.Drawing.Font("SpoqaHanSans-Regular", 15.05454F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.macro2.Location = new System.Drawing.Point(443, 356);
             this.macro2.Name = "macro2";
-            this.macro2.Size = new System.Drawing.Size(0, 35);
+            this.macro2.Size = new System.Drawing.Size(0, 32);
             this.macro2.TabIndex = 15;
             this.macro2.Click += new System.EventHandler(this.Macro2_Click);
             // 
@@ -150,7 +152,7 @@
             this.macro3.Font = new System.Drawing.Font("SpoqaHanSans-Regular", 15.05454F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.macro3.Location = new System.Drawing.Point(808, 356);
             this.macro3.Name = "macro3";
-            this.macro3.Size = new System.Drawing.Size(0, 35);
+            this.macro3.Size = new System.Drawing.Size(0, 32);
             this.macro3.TabIndex = 16;
             // 
             // macro12
@@ -162,7 +164,7 @@
             this.macro12.ForeColor = System.Drawing.Color.Red;
             this.macro12.Location = new System.Drawing.Point(212, 356);
             this.macro12.Name = "macro12";
-            this.macro12.Size = new System.Drawing.Size(0, 35);
+            this.macro12.Size = new System.Drawing.Size(0, 32);
             this.macro12.TabIndex = 17;
             this.macro12.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -175,7 +177,7 @@
             this.macro22.ForeColor = System.Drawing.Color.Red;
             this.macro22.Location = new System.Drawing.Point(588, 356);
             this.macro22.Name = "macro22";
-            this.macro22.Size = new System.Drawing.Size(0, 35);
+            this.macro22.Size = new System.Drawing.Size(0, 32);
             this.macro22.TabIndex = 19;
             this.macro22.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -188,7 +190,7 @@
             this.macro32.ForeColor = System.Drawing.Color.Red;
             this.macro32.Location = new System.Drawing.Point(955, 356);
             this.macro32.Name = "macro32";
-            this.macro32.Size = new System.Drawing.Size(0, 35);
+            this.macro32.Size = new System.Drawing.Size(0, 32);
             this.macro32.TabIndex = 20;
             this.macro32.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -200,7 +202,7 @@
             this.label3.Font = new System.Drawing.Font("SpoqaHanSans-Regular", 15.05454F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(1076, 707);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 35);
+            this.label3.Size = new System.Drawing.Size(97, 32);
             this.label3.TabIndex = 22;
             this.label3.Text = "최종 금액";
             // 
@@ -212,7 +214,7 @@
             this.label4.Font = new System.Drawing.Font("SpoqaHanSans-Regular", 15.05454F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(1258, 707);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 35);
+            this.label4.Size = new System.Drawing.Size(28, 32);
             this.label4.TabIndex = 23;
             this.label4.Text = "0";
             this.label4.Click += new System.EventHandler(this.Label4_Click);
@@ -226,7 +228,7 @@
             this.macro42.ForeColor = System.Drawing.Color.Red;
             this.macro42.Location = new System.Drawing.Point(212, 691);
             this.macro42.Name = "macro42";
-            this.macro42.Size = new System.Drawing.Size(0, 35);
+            this.macro42.Size = new System.Drawing.Size(0, 32);
             this.macro42.TabIndex = 26;
             this.macro42.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -238,7 +240,7 @@
             this.macro4.Font = new System.Drawing.Font("SpoqaHanSans-Regular", 15.05454F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.macro4.Location = new System.Drawing.Point(63, 691);
             this.macro4.Name = "macro4";
-            this.macro4.Size = new System.Drawing.Size(0, 35);
+            this.macro4.Size = new System.Drawing.Size(0, 32);
             this.macro4.TabIndex = 25;
             // 
             // pictureBox4
@@ -260,7 +262,7 @@
             this.macro52.ForeColor = System.Drawing.Color.Red;
             this.macro52.Location = new System.Drawing.Point(592, 691);
             this.macro52.Name = "macro52";
-            this.macro52.Size = new System.Drawing.Size(0, 35);
+            this.macro52.Size = new System.Drawing.Size(0, 32);
             this.macro52.TabIndex = 29;
             this.macro52.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -272,7 +274,7 @@
             this.macro5.Font = new System.Drawing.Font("SpoqaHanSans-Regular", 15.05454F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.macro5.Location = new System.Drawing.Point(443, 691);
             this.macro5.Name = "macro5";
-            this.macro5.Size = new System.Drawing.Size(0, 35);
+            this.macro5.Size = new System.Drawing.Size(0, 32);
             this.macro5.TabIndex = 28;
             // 
             // pictureBox5
@@ -294,7 +296,7 @@
             this.macro62.ForeColor = System.Drawing.Color.Red;
             this.macro62.Location = new System.Drawing.Point(957, 691);
             this.macro62.Name = "macro62";
-            this.macro62.Size = new System.Drawing.Size(0, 35);
+            this.macro62.Size = new System.Drawing.Size(0, 32);
             this.macro62.TabIndex = 32;
             this.macro62.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -306,7 +308,7 @@
             this.macro6.Font = new System.Drawing.Font("SpoqaHanSans-Regular", 15.05454F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.macro6.Location = new System.Drawing.Point(808, 691);
             this.macro6.Name = "macro6";
-            this.macro6.Size = new System.Drawing.Size(0, 35);
+            this.macro6.Size = new System.Drawing.Size(0, 32);
             this.macro6.TabIndex = 31;
             // 
             // pictureBox6
@@ -329,13 +331,36 @@
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.PictureBox7_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("SpoqaHanSans-Regular", 34F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label2.Location = new System.Drawing.Point(570, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 69);
+            this.label2.TabIndex = 34;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("SpoqaHanSans-Regular", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1082, 503);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(261, 104);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "결제";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1366, 899);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.macro62);
             this.Controls.Add(this.macro6);
             this.Controls.Add(this.pictureBox6);
@@ -403,6 +428,8 @@
         private System.Windows.Forms.Label macro6;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

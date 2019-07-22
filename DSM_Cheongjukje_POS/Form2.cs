@@ -74,5 +74,10 @@ namespace DSM_Cheongjukje_POS
                 checkBox2.Checked = false;
             }
         }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

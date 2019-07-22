@@ -13,7 +13,7 @@ namespace DSM_Cheongjukje_POS
     public partial class Form3 : Form
     {
         //델리게이트 선언
-        public delegate void FormSendDataHandler(string sendstring);
+        public delegate void FormSendDataHandler(string sendstring, string sendstring2);
         //이벤트 생성
         public event FormSendDataHandler FormSendEvent;
         public Form3()
@@ -32,10 +32,26 @@ namespace DSM_Cheongjukje_POS
                 MessageBox.Show("부스명을 입력해주세요.", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
-                this.FormSendEvent(textBox1.Text);
+                string itemText = listBox1.GetItemText(listBox1.SelectedItem);
+                this.FormSendEvent(textBox1.Text, itemText);
                 if(MessageBox.Show($"부스명 : {textBox1.Text}가 맞나요?", "Info", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
                     this.Close();
             }
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

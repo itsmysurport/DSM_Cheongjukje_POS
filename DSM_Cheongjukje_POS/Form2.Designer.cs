@@ -65,15 +65,16 @@
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.14545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(106, 104);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(507, 56);
+            this.textBox1.Size = new System.Drawing.Size(507, 50);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.14545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(106, 209);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(507, 56);
+            this.textBox2.Size = new System.Drawing.Size(507, 50);
             this.textBox2.TabIndex = 3;
             // 
             // label1
@@ -82,7 +83,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 116);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 29);
+            this.label1.Size = new System.Drawing.Size(66, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "상품 명";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
@@ -93,7 +94,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(27, 221);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 29);
+            this.label2.Size = new System.Drawing.Size(44, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "가격";
             // 
@@ -105,7 +106,7 @@
             this.checkBox1.Font = new System.Drawing.Font("SpoqaHanSans-Regular", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(237, 280);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 40);
+            this.checkBox1.Size = new System.Drawing.Size(73, 36);
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "판매";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -117,7 +118,7 @@
             this.checkBox2.Font = new System.Drawing.Font("SpoqaHanSans-Regular", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.Location = new System.Drawing.Point(322, 280);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(78, 40);
+            this.checkBox2.Size = new System.Drawing.Size(73, 36);
             this.checkBox2.TabIndex = 7;
             this.checkBox2.Text = "충전";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -125,8 +126,7 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(637, 450);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);

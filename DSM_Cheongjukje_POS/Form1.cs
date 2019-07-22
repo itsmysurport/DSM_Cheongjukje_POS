@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Text;
+using System.IO.Ports;
+using System.Net.Http;
+using System.Net;
+using System.IO;
+using System.Threading;
 
 namespace DSM_Cheongjukje_POS
 {
@@ -22,10 +27,114 @@ namespace DSM_Cheongjukje_POS
             init.FormSendEvent += new Form3.FormSendDataHandler(initMethod);
             init.ShowDialog();
         }
+        string PORTNUM = "COM";
+        string boothNamed = "";
+        string playerNamed = "";
+        int playerPoint = 0;
+        SerialPort port = new SerialPort();
+        delegate void SetTextCallback(string  ext);
+        private static readonly HttpClient client = new HttpClient();
 
-        private void initMethod(object sender)
+        string id = "";
+
+        private void sportRCV(object sender, EventArgs e)
         {
-            label1.Text = sender.ToString();
+            String s = "";
+            s = port.ReadExisting();
+            id += s;
+            Console.WriteLine(s);
+            if (s.Contains("Z"))
+            {
+                string[] text1 = id.Split('Z');
+                string[] text = text1[0].Split(',');
+                Console.Write("SUCCESS!!! :");
+                Console.WriteLine(text1[0]);
+                id = "";
+                playerNamed = text[0];
+                boothNamed = text[1];
+                if (text[0].Length > 8)
+                {
+                    return;
+                }
+
+                Getting(text[0]);
+            }
+        }
+        private void Adruino_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            this.Invoke(new EventHandler(sportRCV));                
+        }
+        private void Getting(string text)
+        {
+            string url = $"http://52.78.51.109:5000/info/{text}";  //테스트 사이트
+            string responseText = string.Empty;
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "GET";
+            request.Timeout = 30 * 1000; // 30초
+            request.Headers.Add("Authorization", "BASIC SGVsbG8="); // 헤더 추가 방법
+
+            using (HttpWebResponse resp = (HttpWebResponse)request.GetResponse())
+            {
+                HttpStatusCode status = resp.StatusCode;
+                Console.WriteLine(status);  // 정상이면 "OK"
+
+                Stream respStream = resp.GetResponseStream();
+                using (StreamReader sr = new StreamReader(respStream))
+                {
+                    responseText = sr.ReadToEnd();
+                }
+            }
+            Console.WriteLine(responseText);
+            string[] aRes = responseText.Split(',');
+            string label2asT = aRes[0] + " " + aRes[1];
+            SetText(label2asT);
+            playerPoint = System.Convert.ToInt32(aRes[2]);
+        }
+
+
+        private void SetText(string text)
+        {
+            // InvokeRequired required compares the thread ID of the
+            // calling thread to the thread ID of the creating thread.
+            // If these threads are different, it returns true.
+            if (this.label2.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(SetText);
+                this.Invoke(d, new object[] { text });
+            }
+            else
+            {
+                if (this.label2.Text != text)
+                {
+                    this.label2.Text = text;
+                }
+            }
+        }
+
+        private void initMethod(object sender, object sender1)
+        {
+            try
+            {
+                label1.Text = sender.ToString();
+                this.PORTNUM += sender1.ToString();
+                if (port.IsOpen == false)
+                {
+                    port = new SerialPort(this.PORTNUM, 9600);
+                    port.Encoding = Encoding.Default;
+                    port.Parity = Parity.None;
+                    port.DataBits = 8;
+                    port.StopBits = StopBits.One;
+                    
+                    port.DataReceived += new SerialDataReceivedEventHandler(Adruino_DataReceived);
+                    port.Open();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("포트를 확인한 후 다시 실행해주세요.", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+            }
         }
 
         private void InitMethod(object sender)
@@ -273,6 +382,28 @@ namespace DSM_Cheongjukje_POS
         private void PictureBox6_Click(object sender, EventArgs e)
         {
             priceSendEvent(this.macro62.Text);
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            label2.Text = "";
+            playerPoint = playerPoint + System.Convert.ToInt32(label4.Text);
+            label4.Text = "0";
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            if (playerPoint < 0)
+                MessageBox.Show("잔액이 부족합니다!!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                string uri = "http://52.78.51.109:5000/pay";
+                int boothId = System.Convert.ToInt32(boothNamed);
+                int point = System.Convert.ToInt32(playerPoint);
+                string requestJson = $"{{\"rfid\": \"{playerNamed}\", \"boothId\": {boothId}, \"point\": {point}}}";
+                WebClient webClient = new WebClient();
+                webClient.Headers[HttpRequestHeader.ContentType] = "application/json";
+                webClient.Encoding = UTF8Encoding.UTF8;
+                string responseJSON = webClient.UploadString(uri, requestJson);
+                MessageBox.Show("전송 성공.", "!!!", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            }
         }
     }
 }

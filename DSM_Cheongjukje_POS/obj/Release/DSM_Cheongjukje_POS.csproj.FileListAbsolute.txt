@@ -13,3 +13,4 @@ C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Release\D
 C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Release\DSM_Cheongjukje_POS.application
 C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Release\DSM_Cheongjukje_POS.exe
 C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Release\DSM_Cheongjukje_POS.pdb
+C:\Users\test\source\repos\DSM_Cheongjukje_POS\DSM_Cheongjukje_POS\obj\Release\DSM_Cheongjukje_POS.csprojAssemblyReference.cache
